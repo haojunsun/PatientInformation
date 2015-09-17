@@ -1,0 +1,177 @@
+﻿@using PagedList;
+@using PagedList.Mvc
+
+@model PagedList.StaticPagedList<PatientInformation.Core.Models.Article>
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="description" content="">
+    <meta name="author" content="nizhanjun,guansheng">
+    <link href="~/Content/site.css" rel="stylesheet" />
+    <title>重大工程其他</title>
+</head>
+<body>
+    <div class="header">
+        <h1>
+            <a>
+                文化部民族民间文艺发展中心
+                <img src="~/Content/images/logo1.png" />
+            </a>
+        </h1>
+        <div class="header-rt">
+            <div class="lgrg">
+                <a class="login " href="http://www.cefla.org/Admin/">登陆</a>
+              
+            </div>
+            <div class="form-group">
+               
+                
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="@Url.Action("index", "home")">首页</a>
+            </li>
+            <li>
+                <a href="@Url.Action("dwjj", "home")">单位概况</a>
+                <div>
+                    <ul class="cur1">
+                        <li><a href="@Url.Action("dwjj", "home")">单位简介</a></li>
+                        <li><a href="@Url.Action("ldjj", "home")">领导简介</a></li>
+                        <li><a href="@Url.Action("jgsz", "home")">机构设置</a></li>
+                        <li><a href="@Url.Action("tyyjy", "home")">特约研究员</a></li>
+                        <li><a href="@Url.Action("yjzx", "home")">研究中心</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="@Url.Action("Kykydt", "home")">科研规划</a>
+                <div>
+                    <ul class="cur2">
+                        <li><a href="@Url.Action("Kykydt", "home")">科研动态</a></li>
+                        <li><a href="@Url.Action("Kykexm", "home")">科研项目</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </li>
+            <li class="active">
+                <a href="@Url.Action("Gczgmzmj", "home")">重大工程</a>
+                <div>
+                    <ul class="cur3">
+                        <li><a href="@Url.Action("Gczgmzmj", "home")">中国民族民间文艺集成志书</a></li>
+                        <li><a href="@Url.Action("Gcjrz", "home")">中国节日志</a></li>
+                        <li><a href="@Url.Action("Gcssbb", "home")">中国史诗百部</a></li>
+                        <li><a href="@Url.Action("Gcgat", "home")">集成志书港澳台</a></li>
+                        <li><a href="@Url.Action("Gcqt", "home")">其他</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="@Url.Action("Whzdsy", "home")">文化科技</a>
+                <div>
+                    <ul class="cur4">
+                        <li class="active"><a href="@Url.Action("Whzdsy", "home")">重点实验</a></li>
+                        <li><a href="@Url.Action("Whzyjs", "home")">资源建设</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="@Url.Action("Whjlzlby", "home")">文化交流</a>
+                <div>
+                    <ul class="cur5">
+                        <li><a href="@Url.Action("Whjlzlby", "home")">展览展演</a></li>
+                        <li><a href="@Url.Action("Whjlds", "home")">大赛</a></li>
+                        <li><a href="@Url.Action("Whjlqt", "home")">其他</a></li> <li><a href="@Url.Action("Xzzx", "home")">下载中心</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="@Url.Action("Zxysx", "home")">专项管理</a>
+                <div>
+                    <ul class="cur6">
+                        <li><a href="@Url.Action("Zxysx", "home")">艺术学工作</a></li>
+                        <li><a href="@Url.Action("Zxjqgl", "home")">节庆管理</a></li>
+                        <li><a href="@Url.Action("Zxbzh", "home")">标准化管理</a></li>
+
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="container project">
+        <div class="sidebar">
+            <div class="sidebar-top">
+                <span>重大工程</span>
+            </div>
+            <ul>
+                <li><a href="@Url.Action("Gczgmzmj", "home")">中国民族民间文艺集成志书</a></li>
+                <li><a href="@Url.Action("Gcjrz", "home")">中国节日志</a></li>
+                <li><a href="@Url.Action("Gcssbb", "home")">中国史诗百部</a></li>
+                <li><a href="@Url.Action("Gcgat", "home")">集成志书港澳台</a></li>
+                <li class="active"><a href="@Url.Action("Gcqt", "home")">其他</a></li>
+            </ul>
+        </div>
+        <div class="content-rt  project-qt">
+            <div class="sidemenu">
+                <span>当前位置：</span><a>网站首页</a>&gt;<a>重大工程</a>&gt;<a class="last">其他</a>
+            </div>
+            <div class="hot-news">
+                @if (Model != null&&Model.Count != 0)
+                {
+                    var length = Model.Where(item => item != null).FirstOrDefault().Body.Length > 120 ? 120 : Model.Where(item => item != null).FirstOrDefault().Body.Length;
+                    <h3>热点:<span>@Model.Where(item => item != null).FirstOrDefault().Title</span></h3>
+
+                    <div><a href="@Url.Action("Detail", "home", new { id = Model.Where(item => item != null).FirstOrDefault().ArticleId })">@Html.Raw(Model.Where(item => item != null).FirstOrDefault().Body.Substring(0, length))...<span> ......进入></span></a></div>
+                }
+            </div>
+            <div class="article article1">
+                <h2 class="title">其他</h2>
+                <ul>
+                    @if (Model != null&&Model.Count != 0)
+                    {
+                        foreach (var item in Model.Where(item => item != null))
+                        {
+                            <li><a href="@Url.Action("Detail", "home", new { id = item.ArticleId })">@item.Title</a></li>
+                        }
+                    }
+                </ul>
+                <div class="pagination">
+                    <span>
+                        共@(Model.TotalItemCount)条,每页@(Model.PageSize)条,当前@(Model.PageNumber)/@(Model.PageCount)页
+                    </span>
+                    @Html.PagedListPager((IPagedList)Model, page => Url.Action("Gcqt", "Home", new
+                        {
+                            page,
+                            @size = ViewBag.Size,
+                            ViewBag.channelTag,
+                            ViewBag.columnTag,
+                            ViewBag.tagtype
+                        }))
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul class="ft-nav">
+            <li><a href="@Url.Action("dwjj", "home")">关于我们</a></li>|
+           
+            <li><a>联系我们</a></li>|
+            <li><a>网站地图</a></li>
+        </ul>
+        <p>Copyright &copy; ALL Rights 文化部民族民间文艺发展中心 版权所有 京ICP备10214507号</p>
+    </div>
+    <script src="~/Scripts/jquery-1.11.3.min.js"></script>
+    <script src="~/Scripts/site.js"></script>
+</body>
+</html>
