@@ -56,13 +56,39 @@ namespace PatientInformation.Core.Models
         /// </summary>
         public string Treatment { get; set; }
 
-        //联系地址
+        /// <summary>
+        ///  联系地址
+        /// </summary>
+        public string Address { get; set; }
 
-        //  牙位
+        /// <summary>
+        /// 牙位 左
+        /// </summary>
+        public string TeethLeft { get; set; }
 
-        //类别
-        //完成日期
-        //M
-        //带入
+        /// <summary>
+        /// 牙位 右
+        /// </summary>
+        public string TeethRight { get; set; }
+
+        /// <summary>
+        /// 类别
+        /// </summary>
+        public string Category { get; set; }
+
+        /// <summary>
+        /// 完成日期
+        /// </summary>
+        public DateTime DoneTime { get; set; }
+
+        /// <summary>
+        /// M
+        /// </summary>
+        public string Price { get; set; }
+
+        /// <summary>
+        /// 带入
+        /// </summary>
+        public bool Wear { get; set; }
     }
 }
